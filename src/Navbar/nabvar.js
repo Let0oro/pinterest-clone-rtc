@@ -2,8 +2,8 @@ const navbar = (parent) => {
   import("./navbar.css");
 
   const imageLogo = `<img src="../public/pinterest_logo.png" alt="pinterest_logo">`;
-  const messageIcon = `<img src="../public/messages.png" alt="pinterest_logo">`;
-  const notificationIcon = `<img src="../public/bell.png" alt="pinterest_logo">`;
+  const messageIcon = `<img src="../public/comments.svg" alt="pinterest_logo">`;
+  const notificationIcon = `<img src="../public/bell.svg" alt="pinterest_logo">`;
 
   const templateGen = () => {
     return `

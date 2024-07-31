@@ -1,11 +1,23 @@
-const main = (parent) => {
+import card from "../Card/card";
+
+const main = async (parent) => {
     import("./main.css");
+    const { fetchApi } = await import("./serverUnsplash");
+
+    const data = await fetchApi();
+    console.log(data);
 
     
-    const template = () => {
+    const templateGen = () => {
+        let finalHtml = [];
 
-        return ``
+        for (let i = 0; i < data.length; i++) finalHtml.push( card(data[i]) );
+
+        return finalHtml;
     }
+
+    const template = templateGen();
+    parent.innerHTML = template.join('');
 
 }
 

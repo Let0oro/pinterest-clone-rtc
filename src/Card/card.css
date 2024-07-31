@@ -1,0 +1,18 @@
+.card
+{
+    width: 15%;
+}
+
+.relative
+{
+    & .image img
+    {
+        width: 100%;
+        /* object-fit: contain; */
+    }
+}
+
+.absolute
+{
+
+}
