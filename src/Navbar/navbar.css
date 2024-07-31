@@ -1,0 +1,76 @@
+
+nav 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & img 
+    {
+        width: 3rem;
+    };
+
+    & label 
+    {
+        padding: .4rem;
+        border-radius: 18px;
+        padding: 6px 12px;
+    }
+
+    & label[for="search"]
+    {
+        width: 50%;
+        display: flex;
+        background-color: #ececec;
+        height: 1.5rem;
+        gap: 4px;
+
+        & input 
+        {
+            border: none;
+            background-color: transparent;
+            outline: transparent;
+            width: 100%;
+        }
+    }
+
+    & label:has(input:checked)
+    {
+        background-color: #000;
+        color: #fff
+    }
+
+    & input[type="radio"]
+    {
+        visibility: hidden;
+        display: none;
+    }
+
+}
+
+.icons
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    & img 
+    {
+        width: 2rem;
+    };
+
+    & div:last-child
+    {
+        font-size: 1.1rem;
+        background-color: #E5E5E5;
+        padding: .2rem .55rem;
+        border-radius: 50%;
+    }
+}
+
+@media (width < 480px) {
+    nav .options
+    {
+        display: none;
+    }
+}
