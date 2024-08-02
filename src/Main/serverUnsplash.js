@@ -6,8 +6,8 @@ const unsplash = createApi({
 
 export const fetchApi = async () => {
   try {
-    const { response } = await unsplash.search
-    .getPhotos({ query: 'cat', orientation: 'landscape' });
+    const { response } = await unsplash
+    .photos.list({ page: 1, perPage: 25 });
     const {results} = response;
     return results;
   } catch (error) {
