@@ -1,13 +1,11 @@
 import card from "../Card/card";
 
-const main = async (parent) => {
+const main = async (parent, search = "") => {
     import("./main.css");
     const { fetchApi } = await import("./serverUnsplash");
 
-    const data = await fetchApi();
-    console.log(data);
-
-    
+    const data = await fetchApi(search);
+   
     const templateGen = () => {
         let finalHtml = [];
 

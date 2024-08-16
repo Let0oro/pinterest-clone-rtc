@@ -68,6 +68,19 @@ nav
     }
 }
 
+input#search 
+{
+    color: black;
+}
+
+button#search-btn 
+{
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 @media (width < 480px) {
     nav .options
     {
