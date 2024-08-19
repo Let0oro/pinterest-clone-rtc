@@ -8,7 +8,7 @@ export const fetchApi = async (search = "") => {
   try {
     const { response } = String(search).trim().length ? 
       await unsplash.search.getPhotos({ query: search, orientation: 'landscape', page: 1, perPage: 25 }) : 
-      await unsplash.photos.list({ page: 1, perPage: 25 });
+      await unsplash.search.getPhotos({ query: "cats", orientation: 'landscape', page: 1, perPage: 25 }); 
     const {results} = response;
     return results;
   } catch (error) {

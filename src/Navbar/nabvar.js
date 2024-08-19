@@ -7,11 +7,11 @@ const navbar = (parent) => {
 
   const templateGen = () => {
     return `
-        <div>${imageLogo}</div>
+        <div id="logo" >${imageLogo}</div>
         <label class="options" for="inicio">Inicio<input name="options" id="inicio"  type="radio" checked /></label>
         <label class="options" for="explorar">Explorar<input name="options" id="explorar" type="radio" /></label>
         <label class="options" for="crear">Crear<input name="options" id="crear" type="radio" /></label>
-        <label for="search"><button id="search-btn">🔎</button><input id="search" type="text" placeholder="Buscar"></label>
+        <label for="search"><button id="search-btn">🔎</button><input id="search" type="text" placeholder="Use a phrase or word to search images"></label>
         <div class="icons">
         <div class="options" >${messageIcon}</div>
         <div class="options" >${notificationIcon}</div>

@@ -81,6 +81,8 @@ button#search-btn
     cursor: pointer;
 }
 
+#logo { cursor: pointer }
+
 @media (width < 480px) {
     nav .options
     {
