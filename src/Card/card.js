@@ -16,11 +16,11 @@ const card = ({
     return `
     <div class="card" >
       <div class="relative">
-        <div class="image" ><img src="${urls.regular}" alt="${alt_description}" /></div>
+        <div class="image" ><img loading="lazy" src="${urls.regular}" alt="${alt_description}" /></div>
         <div class="user" style="--random-color: rgb(${rndmClr.join(', ')})" ><img src="${user.profile_image.medium}" alt=""></div>
         <p>${user.name}</p>
         <p>
-          <span><img src="../../public/icon-upload.svg" alt="icon-upload" /> ${Intl.DateTimeFormat("ES-es").format(new Date(created_at))}</span>
+          <span><img src="../../public/icon-upload.svg" loading="lazy" alt="icon-upload" /> ${Intl.DateTimeFormat("ES-es").format(new Date(created_at))}</span>
         </p>
       </div>
       <div class="absolute">

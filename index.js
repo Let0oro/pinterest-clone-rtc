@@ -1,7 +1,6 @@
 import main from "./src/Main/main";
 import navbar from "./src/Navbar/nabvar";
 import "./style.css";
-let firstSearch = "";
 
 const render = () => {
     const navHTML = document.querySelector("nav");
@@ -19,10 +18,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const mainHTML = document.querySelector("main");
 
     const refreshMain = (isLogo) => {
-        if (!firstSearch.trim().length) firstSearch = input.value;
-        console.log({firstSearch})
         if (isLogo) {
-            main(mainHTML, firstSearch);
+            main(mainHTML, "cats");
         } else {
             main(mainHTML, input.value);
         }
